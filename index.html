@@ -158,6 +158,24 @@
   .card-note{font-size:13px; color:var(--body); margin-top:30px; max-width:74ch; line-height:1.9;}
   .card-note strong{color:var(--rose); font-weight:700;}
 
+  /* ===== 調座・調息・調心と重心（三角図） ===== */
+  .framework-row{display:flex; align-items:center; justify-content:center; gap:28px; flex-wrap:wrap;}
+  .triangle-diagram{max-width:320px; width:100%; margin:0 auto;}
+  .triangle-diagram svg{width:100%; height:auto;}
+  .framework-figure{max-width:320px; width:100%;}
+  .framework-figure img{width:100%; height:auto; border-radius:16px;}
+  .td-label{font-family:var(--font-display); font-size:16px; fill:var(--ink);}
+  .td-label.td-rose{fill:var(--rose); font-weight:600;}
+  .td-label.td-sub{font-family:var(--font-mono); font-size:10px; fill:var(--body); opacity:0.8;}
+
+  /* ===== 自認と引き寄せのズレ（クロス4分割） ===== */
+  .cross-diagram{max-width:640px; margin:0 auto;}
+  .cross-diagram svg{width:100%; height:auto; overflow:hidden; display:block;}
+  .cross-diagram-bleed{max-width:none; margin:0 -40px; width:calc(100% + 80px);}
+  @media (max-width:640px){ .cross-diagram-bleed{margin:0 -20px; width:calc(100% + 40px);} }
+  .cx-label{font-family:var(--font-display); font-size:22px; font-weight:700; fill:#fff;}
+  .cx-label.cx-label-rose{font-size:14px; fill:#fff; font-family:var(--font-body); font-weight:700;}
+
   /* 16 type grid */
   .type-grid{display:grid; grid-template-columns:repeat(8,1fr); gap:30px 16px;}
   @media (max-width:900px){ .type-grid{grid-template-columns:repeat(4,1fr);} }
@@ -191,6 +209,23 @@
   .layer-cell .lyc-sub{font-family:var(--font-mono); font-size:10px; color:var(--body); margin-top:6px;}
   .layer-cell .lyc-detail{font-size:11px; color:var(--body); opacity:0.85; margin-top:4px;}
   .layer-note{font-family:var(--font-mono); font-size:10.5px; color:var(--body); opacity:0.75; text-align:center; margin-top:24px; letter-spacing:0.02em;}
+
+  /* ===== 生理的安全欲求とdrive（意識のマップ） ===== */
+  .maslow{max-width:420px; margin:0 auto;}
+  .maslow svg{width:100%; height:auto;}
+  .mw-tier{fill:var(--card); stroke:var(--teal); stroke-width:1; opacity:0.9;}
+  .mw-tier.mw-alert{fill:var(--rose-soft); stroke:var(--rose);}
+  .mw-label{font-family:var(--font-body); font-size:11px; fill:var(--body);}
+  .mw-current{font-family:var(--font-mono); font-size:10px; fill:var(--rose); font-weight:700;}
+
+  .spectrum{position:relative; height:96px; margin:24px 0 10px;}
+  .spectrum-bar{display:flex; height:60px; border-radius:12px; overflow:hidden; border:1px solid var(--line);}
+  .spectrum-bar > div{flex:1; display:flex; align-items:center; justify-content:center; flex-direction:column; font-family:var(--font-body); font-weight:700; font-size:14px; text-align:center; line-height:1.5;}
+  .spectrum-bar .force{background:var(--rose-soft); color:var(--rose);}
+  .spectrum-bar .power{background:var(--card); color:var(--body);}
+  .spectrum-bar span{font-family:var(--font-mono); font-weight:400; font-size:11px; display:block; margin-top:4px;}
+  .spectrum-marker{position:absolute; top:68px; width:14px; height:14px; border-radius:50%; background:var(--rose); border:2px solid var(--cream); left:22%; transform:translateX(-50%);}
+  .spectrum-marker-label{position:absolute; top:44px; left:22%; transform:translateX(-50%); font-family:var(--font-mono); font-size:11px; color:var(--rose); white-space:nowrap;}
 
   /* closing bar (matches reference footer strip) */
   .closing-bar{
@@ -243,6 +278,53 @@
     </div>
 
     <div style="height:56px;"></div>
+
+    <!-- ===== 調座・調息・調心と重心 ===== -->
+    <div class="score-card">
+      <div class="divider">framework</div>
+      <p class="section-sub">調座・調息・調心と重心</p>
+
+      <div class="framework-row">
+      <div class="triangle-diagram">
+        <svg viewBox="0 0 340 300">
+          <!-- 逆円錐：調座・調息・調心の面を上のリム（円）、重心を底の1点とする錐状 -->
+          <!-- 側面の陰影（左右で濃淡をつけて立体感を出す） -->
+          <polygon points="170,85 45,85 135,245" fill="var(--teal)" opacity="0.22"/>
+          <polygon points="170,85 295,85 135,245" fill="var(--teal)" opacity="0.11"/>
+
+          <!-- 錐の稜線（リムから頂点へ） -->
+          <line x1="45" y1="85" x2="135" y2="245" stroke="var(--teal)" stroke-width="1.2" opacity="0.8"/>
+          <line x1="295" y1="85" x2="135" y2="245" stroke="var(--teal)" stroke-width="1.2" opacity="0.8"/>
+
+          <!-- リム：調座・調息・調心がつくる面（楕円で奥行きを表現） -->
+          <ellipse cx="170" cy="85" rx="125" ry="34" fill="var(--teal-soft)" stroke="var(--teal)" stroke-width="1.3"/>
+
+          <!-- 中庸：リムの中心 -->
+          <circle cx="170" cy="85" r="3.5" fill="var(--body)" opacity="0.55"/>
+          <line x1="170" y1="85" x2="135" y2="245" stroke="var(--body)" stroke-width="0.8" opacity="0.25" stroke-dasharray="2 3"/>
+
+          <!-- 頂点（リム上の3点） -->
+          <circle cx="170" cy="50" r="6" fill="#fff" stroke="var(--teal)" stroke-width="1.6"/>
+          <circle cx="45" cy="85" r="6" fill="#fff" stroke="var(--teal)" stroke-width="1.6"/>
+          <circle cx="295" cy="85" r="6" fill="#fff" stroke="var(--teal)" stroke-width="1.6"/>
+
+          <!-- 重心：錐の頂点（底の1点） -->
+          <ellipse cx="135" cy="255" rx="20" ry="6" fill="var(--rose)" opacity="0.12"/>
+          <circle cx="135" cy="245" r="8" fill="var(--rose)"/>
+
+          <text x="170" y="36" text-anchor="middle" class="td-label">調座</text>
+          <text x="33" y="72" text-anchor="middle" class="td-label">調息</text>
+          <text x="307" y="72" text-anchor="middle" class="td-label">調心</text>
+          <text x="188" y="82" class="td-label td-sub">中庸</text>
+          <text x="135" y="276" text-anchor="middle" class="td-label td-rose">重心</text>
+        </svg>
+      </div>
+
+      <div class="framework-figure">
+        <img class="zoomable" src="framework-guide.png" alt="案内人">
+      </div>
+      </div>
+    </div>
 
     <!-- ===== 6 lenses ===== -->
     <div class="score-card">
@@ -329,6 +411,49 @@
       <p class="card-note">黄＝自称（<strong>07 アーティスト・02 ケアテイカー</strong>）、赤＝実測の固着パターン（<strong>06 コミュニケーター・08 アナライザー・11 サポーター</strong>）です。自称と実測の間に3タイプ分の乖離があることが、視覚的に見えます。</p>
     </div>
 
+    <!-- ===== 自認と引き寄せのズレ ===== -->
+    <div class="score-card">
+      <div class="divider">self-image / landing</div>
+      <p class="section-sub">自認と引き寄せのズレ</p>
+
+      <div class="cross-diagram cross-diagram-bleed">
+        <svg viewBox="0 0 800 200" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="cxSelf" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="var(--teal)" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="var(--teal)" stop-opacity="0.85"/>
+            </linearGradient>
+            <linearGradient id="cxLanding" x1="1" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="var(--rose)" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="var(--rose)" stop-opacity="0.9"/>
+            </linearGradient>
+            <linearGradient id="cxNeutralTop" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="var(--ochre)" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="var(--ochre)" stop-opacity="0.22"/>
+            </linearGradient>
+            <linearGradient id="cxNeutralBottom" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="var(--body)" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="var(--body)" stop-opacity="0.18"/>
+            </linearGradient>
+          </defs>
+
+          <rect x="0" y="0" width="800" height="200" fill="var(--rose)" opacity="0.9"/>
+          <polygon points="0,0 620,0 260,120" fill="url(#cxNeutralTop)"/>
+          <polygon points="800,200 60,200 260,120" fill="url(#cxNeutralBottom)"/>
+          <polygon points="0,200 0,0 260,120" fill="url(#cxSelf)"/>
+          <polygon points="620,0 800,0 800,200 260,120" fill="url(#cxLanding)"/>
+
+          <line x1="0" y1="0" x2="800" y2="120" stroke="#fff" stroke-width="1" opacity="0.3"/>
+          <line x1="620" y1="0" x2="60" y2="200" stroke="#fff" stroke-width="1" opacity="0.3"/>
+
+          <text x="110" y="112" text-anchor="middle" class="cx-label">自認</text>
+          <text x="620" y="96" text-anchor="middle" class="cx-label cx-label-rose">人を引き寄せているのは<tspan x="620" dy="16">こっち</tspan></text>
+        </svg>
+      </div>
+
+      <p class="card-note" style="text-align:center; margin-left:auto; margin-right:auto;">自分がそうだと思っている面（自認）と、実際に人を引き寄せている面は、同じ場所にあるとは限りません。</p>
+    </div>
+
     <!-- ===== thinking layers ===== -->
     <div class="score-card">
       <div class="divider">thinking layers</div>
@@ -376,6 +501,44 @@
       </div>
 
       <p class="layer-note">L1–L3は稼働 → L4で部分機能 → L5で完全遮断 → L6不可視 → L7は評価対象外</p>
+    </div>
+
+    <!-- ===== 生理的安全欲求とdrive（意識のマップ） ===== -->
+    <div class="score-card">
+      <div class="divider">foundation</div>
+      <p class="section-sub">生理的安全欲求の現在地と、意識のマップ</p>
+
+      <div class="maslow">
+        <svg viewBox="0 0 420 260">
+          <polygon points="46,204 254,204 280,250 20,250" class="mw-tier mw-alert"/>
+          <polygon points="72,158 228,158 254,204 46,204" class="mw-tier mw-alert"/>
+          <polygon points="98,112 202,112 228,158 72,158" class="mw-tier"/>
+          <polygon points="124,66 176,66 202,112 98,112" class="mw-tier"/>
+          <polygon points="150,20 176,66 124,66" class="mw-tier"/>
+
+          <text x="300" y="230" class="mw-label">生理的欲求</text>
+          <text x="300" y="184" class="mw-label">安全欲求</text>
+          <text x="300" y="138" class="mw-label">社会的欲求</text>
+          <text x="300" y="92" class="mw-label">承認欲求</text>
+          <text x="300" y="46" class="mw-label">自己実現欲求</text>
+
+          <line x1="150" y1="227" x2="270" y2="227" stroke="var(--rose)" stroke-width="1" stroke-dasharray="2 3" opacity="0.7"/>
+          <text x="150" y="227" text-anchor="middle" class="mw-current">現在地</text>
+        </svg>
+      </div>
+
+      <div style="height:20px;"></div>
+
+      <div class="spectrum">
+        <div class="spectrum-bar">
+          <div class="force">force駆動<span>脅威回避・欠乏動因</span></div>
+          <div class="power">power駆動<span>自己主導・成長動因</span></div>
+        </div>
+        <div class="spectrum-marker-label">現在地</div>
+        <div class="spectrum-marker"></div>
+      </div>
+
+      <p class="card-note" style="text-align:center; margin-left:auto; margin-right:auto;">土台（生理的欲求・安全欲求）が枯渇している状態では、行動の起点が「選ぶ」ではなく「避ける」になる。03像・01視座・05陰陽・06循環の固着は、すべてforce駆動の表れとして一致する。</p>
     </div>
 
     <!-- ===== closing bar ===== -->
