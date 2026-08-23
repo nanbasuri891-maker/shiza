@@ -182,8 +182,8 @@
   @media (max-width:520px){ .type-grid{grid-template-columns:repeat(2,1fr);} }
   .type-cell{text-align:center;}
   .type-cell .tc-num{font-family:var(--font-mono); font-size:10px; color:var(--teal); opacity:0.75;}
-  .type-cell .icon-badge{width:52px; height:52px; margin:8px auto 12px;}
-  .type-cell .icon-badge svg{width:24px; height:24px;}
+  .type-cell .icon-badge{width:68px; height:68px; margin:8px auto 12px;}
+  .type-cell .icon-badge svg{width:34px; height:34px;}
   .type-cell .tc-name{font-size:12.5px; font-weight:700; color:var(--ink);}
   .type-cell.self-report .tc-name{color:var(--ochre);}
   .type-cell.fixed-pattern .tc-name{color:var(--rose);}
@@ -383,24 +383,150 @@
       <p class="section-sub">自称と実測のズレ</p>
 
       <div class="type-grid">
-        <div class="type-cell"><span class="tc-num">01</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8.5"/><path d="M15.2 8.8 L10.6 10.6 L8.8 15.2 L13.4 13.4 Z"/><circle cx="12" cy="12" r="0.8" fill="currentColor" stroke="none"/></svg></div><div class="tc-name">オーガナイザー</div><div class="tc-desc">構造をつくり、<br>物事を前に進める人</div></div>
-        <div class="type-cell self-report"><span class="tc-num">02</span><div class="icon-badge self-report"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12 C4 12 6 16 12 18 C18 16 20 12 20 12" stroke-linecap="round"/><path d="M12 9.5 C11 6 4 6.5 4 11 C4 12.5 5 13.5 6 14.2" stroke-linecap="round" opacity="0.85"/><path d="M12 9.5 C13 6 20 6.5 20 11 C20 12.5 19 13.5 18 14.2" stroke-linecap="round" opacity="0.85"/></svg></div><div class="tc-name">ケアテイカー</div><div class="tc-tag">自称</div><div class="tc-desc">人を支え、<br>安心を届ける人</div></div>
-        <div class="type-cell"><span class="tc-num">03</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="10.5" width="9" height="2.4" rx="1.2" transform="rotate(-28 9 10.5)"/><line x1="8.2" y1="11.8" x2="4" y2="16.5" stroke-linecap="round" stroke-width="1.8"/><circle cx="5.5" cy="9" r="1.2" fill="currentColor" stroke="none"/><line x1="5" y1="6" x2="6" y2="7.4" stroke-linecap="round"/><line x1="3.2" y1="8" x2="4.7" y2="8.5" stroke-linecap="round"/></svg></div><div class="tc-name">オブザーバー</div><div class="tc-desc">静かに見つめ、<br>本質を見抜く人</div></div>
-        <div class="type-cell"><span class="tc-num">04</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 12 m-1.5 0 a1.5 1.5 0 1 0 3 0 a1.5 1.5 0 1 0 -3 0" opacity="0.9"/><path d="M12 10.5 C15 10.5 16 7.5 14 5.5" opacity="0.7"/><path d="M13.5 12 C13.5 15 16.5 16 18.5 14" opacity="0.55"/><path d="M12 13.5 C9 13.5 8 16.5 10 18.5" opacity="0.4"/><circle cx="14" cy="5.5" r="0.9" fill="currentColor" stroke="none"/><circle cx="18.5" cy="14" r="0.9" fill="currentColor" stroke="none"/><circle cx="10" cy="18.5" r="0.9" fill="currentColor" stroke="none"/></svg></div><div class="tc-name">フラクタル</div><div class="tc-desc">つながりを見出し、<br>全体を理解する人</div></div>
-        <div class="type-cell"><span class="tc-num">05</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 9.5 C9 6.5 10.3 4.5 12 4.5 C13.7 4.5 15 6.5 15 9.5 C15 11.5 14 12.5 13.3 13.5 C13 14 12.8 14.5 12.8 15 H11.2 C11.2 14.5 11 14 10.7 13.5 C10 12.5 9 11.5 9 9.5Z"/><line x1="10.8" y1="16.5" x2="13.2" y2="16.5"/><line x1="11" y1="18" x2="13" y2="18"/></svg></div><div class="tc-name">イノベーター</div><div class="tc-desc">新しい発想で、<br>未来をひらく人</div></div>
-        <div class="type-cell fixed-pattern"><span class="tc-num">06</span><div class="icon-badge fixed-pattern"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6.5 C3 5.3 4 4.5 5.2 4.5 H12 C13.2 4.5 14.2 5.3 14.2 6.5 V10 C14.2 11.2 13.2 12 12 12 H8 L5.2 14.3 V12 H5.2 C4 12 3 11.2 3 10 Z"/><path d="M14.2 8 H15.5 C16.7 8 17.7 8.8 17.7 10 V12.5 C17.7 13.7 16.7 14.5 15.5 14.5 H15.2 V16.8 L12.8 14.5" opacity="0.75"/></svg></div><div class="tc-name">コミュニケーター</div><div class="tc-tag">実測（固着）</div><div class="tc-desc">言葉でつなぎ、<br>関係し育する人</div></div>
-        <div class="type-cell self-report"><span class="tc-num">07</span><div class="icon-badge self-report"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 13.5 C4 8 7.6 4.5 12.5 4.5 C17 4.5 19.5 7 19.5 10 C19.5 12 18.2 13 16.5 12.2 C14.8 11.4 13.8 12.8 14.7 14.1 C15.6 15.4 14.3 17 12.5 16.6 C7.5 15.6 4 15 4 13.5Z"/><circle cx="8.5" cy="10" r="0.9" fill="currentColor" stroke="none"/><circle cx="12.5" cy="8.3" r="0.9" fill="currentColor" stroke="none"/><line x1="17.5" y1="15" x2="17.5" y2="19.5" stroke-linecap="round"/></svg></div><div class="tc-name">アーティスト</div><div class="tc-tag">自称</div><div class="tc-desc">感性で表現し、<br>美を生み出す人</div></div>
-        <div class="type-cell fixed-pattern"><span class="tc-num">08</span><div class="icon-badge fixed-pattern"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4,15 8,10.5 11,13 16,7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="17.5" cy="15.5" r="3.2"/><line x1="19.8" y1="17.8" x2="21.5" y2="19.5" stroke-linecap="round"/></svg></div><div class="tc-name">アナライザー</div><div class="tc-tag">実測（投影）</div><div class="tc-desc">分析し、<br>正確さを追求する人</div></div>
+        <div class="type-cell"><span class="tc-num">01</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><circle cx="150" cy="140" r="80" fill="none" stroke="currentColor" stroke-width="18"/>
+  <circle cx="150" cy="140" r="64" fill="none" stroke="currentColor" stroke-width="9"/>
+  <path d="M150,80 L150,96" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M150,184 L150,200" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M90,140 L106,140" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M194,140 L210,140" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M150,140 L120,95 L150,140 L180,190 Z" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="140" r="7" fill="#4F8C82" opacity="1"/>
+  <circle cx="215" cy="205" r="4" fill="#4F8C82" opacity="0.8"/>
+  <circle cx="228" cy="222" r="3" fill="#4F8C82" opacity="0.5"/>
+  <circle cx="238" cy="236" r="2" fill="#4F8C82" opacity="0.3"/></svg></div><div class="tc-name">オーガナイザー</div><div class="tc-desc">構造をつくり、<br>物事を前に進める人</div></div>
+        <div class="type-cell self-report"><span class="tc-num">02</span><div class="icon-badge self-report"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M90,165 C90,120 118,100 150,100 C182,100 210,120 210,165" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M90,165 C95,190 120,205 150,205 C180,205 205,190 210,165" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M90,165 C80,168 72,180 78,196 C84,210 100,208 108,196" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M210,165 C220,168 228,180 222,196 C216,210 200,208 192,196" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="150" r="10" fill="#4F8C82" opacity="1"/>
+  <path d="M150,143 C144,134 132,134 128,144 C124,154 138,164 150,172 C162,164 176,154 172,144 C168,134 156,134 150,143 Z" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="tc-name">ケアテイカー</div><div class="tc-tag">自称</div><div class="tc-desc">人を支え、<br>安心を届ける人</div></div>
+        <div class="type-cell"><span class="tc-num">03</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M95,130 L215,95" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95,130 L108,152" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M215,95 L226,113" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="96" cy="131" r="10" fill="none" stroke="currentColor" stroke-width="15"/>
+  <circle cx="96" cy="131" r="4" fill="#4F8C82" opacity="1"/>
+  <path d="M150,150 L120,235" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M150,150 L150,240" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M150,150 L180,235" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M132,205 L168,205" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="230" cy="80" r="4" fill="#4F8C82" opacity="0.8"/>
+  <circle cx="242" cy="68" r="3" fill="#4F8C82" opacity="0.5"/>
+  <circle cx="252" cy="58" r="2" fill="#4F8C82" opacity="0.3"/></svg></div><div class="tc-name">オブザーバー</div><div class="tc-desc">静かに見つめ、<br>本質を見抜く人</div></div>
+        <div class="type-cell"><span class="tc-num">04</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><circle cx="160.0" cy="150.0" r="19.0" fill="#4F8C82" opacity="1.0"/>
+  <circle cx="158.9411792270561" cy="162.8646709430947" r="18.133333333333333" fill="#4F8C82" opacity="0.9700000000000001"/>
+  <circle cx="142.56379632380128" cy="169.99534910916034" r="17.266666666666666" fill="#4F8C82" opacity="0.9400000000000001"/>
+  <circle cx="123.84825464952696" cy="156.7146269534511" r="16.4" fill="#4F8C82" opacity="0.9100000000000001"/>
+  <circle cx="125.27149484870928" cy="128.65492693632322" r="15.533333333333335" fill="#4F8C82" opacity="0.8800000000000001"/>
+  <circle cx="154.00692442526002" cy="111.87666067754952" r="14.666666666666668" fill="#4F8C82" opacity="0.8500000000000001"/>
+  <circle cx="188.55749392192996" cy="128.8028383395245" r="13.8" fill="#4F8C82" opacity="0.8200000000000001"/>
+  <circle cx="194.48701742522417" cy="172.08354723285137" r="12.933333333333334" fill="#4F8C82" opacity="0.79"/>
+  <circle cx="158.08326091378683" cy="204.73973575728536" r="12.066666666666666" fill="#4F8C82" opacity="0.76"/>
+  <circle cx="105.53291372729396" cy="191.75737346165008" r="11.2" fill="#4F8C82" opacity="0.7300000000000001"/>
+  <circle cx="84.79015995107962" cy="136.13922061214944" r="10.333333333333334" fill="#4F8C82" opacity="0.7000000000000001"/>
+  <circle cx="121.96970591329773" cy="83.31856536843186" r="9.466666666666667" fill="#4F8C82" opacity="0.67"/>
+  <circle cx="191.7944900083616" cy="84.14242181084275" r="8.6" fill="#4F8C82" opacity="0.64"/>
+  <circle cx="233.5932767849378" cy="146.49640363799017" r="7.7333333333333325" fill="#4F8C82" opacity="0.61"/>
+  <circle cx="204.0108542610389" cy="221.15667267682815" r="6.866666666666666" fill="#4F8C82" opacity="0.5800000000000001"/>
+  <circle cx="120.6433855343802" cy="240.35036904803965" r="6.0" fill="#4F8C82" opacity="0.55"/>
+  <circle cx="150" cy="150" r="16" fill="#4F8C82" opacity="1"/></svg></div><div class="tc-name">フラクタル</div><div class="tc-desc">つながりを見出し、<br>全体を理解する人</div></div>
+        <div class="type-cell"><span class="tc-num">05</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M150,75 C118,75 96,98 96,128 C96,150 108,163 118,175 C124,182 128,190 128,200 L172,200 C172,190 176,182 182,175 C192,163 204,150 204,128 C204,98 182,75 150,75 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M128,210 L172,210" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M134,222 L166,222" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M140,234 L160,234" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M138,120 C138,120 150,112 162,120 C162,140 150,150 150,150 C150,150 138,140 138,120 Z" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="133" r="6" fill="#4F8C82" opacity="1"/>
+  <circle cx="110" cy="90" r="3" fill="#4F8C82" opacity="0.7"/>
+  <circle cx="98" cy="78" r="2" fill="#4F8C82" opacity="0.4"/>
+  <circle cx="190" cy="90" r="3" fill="#4F8C82" opacity="0.7"/>
+  <circle cx="202" cy="78" r="2" fill="#4F8C82" opacity="0.4"/></svg></div><div class="tc-name">イノベーター</div><div class="tc-desc">新しい発想で、<br>未来をひらく人</div></div>
+        <div class="type-cell fixed-pattern"><span class="tc-num">06</span><div class="icon-badge fixed-pattern"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M84,110 C84,92 100,78 122,78 L176,78 C198,78 214,92 214,110 C214,128 198,142 176,142 L146,142 L120,162 L126,140 C102,138 84,126 84,110 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M126,168 C126,152 140,140 160,140 L206,140 C226,140 240,152 240,168 C240,184 226,196 206,196 L186,196 L200,214 L178,194 C158,192 126,184 126,168 Z" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="110" r="5" fill="#4F8C82" opacity="1"/>
+  <circle cx="172" cy="110" r="5" fill="#4F8C82" opacity="1"/>
+  <circle cx="194" cy="110" r="5" fill="#4F8C82" opacity="1"/>
+  <circle cx="183" cy="168" r="6" fill="#4F8C82" opacity="1"/></svg></div><div class="tc-name">コミュニケーター</div><div class="tc-tag">実測（固着）</div><div class="tc-desc">言葉でつなぎ、<br>関係し育する人</div></div>
+        <div class="type-cell self-report"><span class="tc-num">07</span><div class="icon-badge self-report"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M150,80 C110,80 78,108 78,145 C78,178 104,200 136,196 C144,195 148,188 144,180 C140,172 144,164 154,164 L184,164 C206,164 222,148 222,126 C222,100 190,80 150,80 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="112" cy="120" r="7" fill="#4F8C82" opacity="1"/>
+  <circle cx="140" cy="102" r="7" fill="#4F8C82" opacity="1"/>
+  <circle cx="178" cy="104" r="7" fill="#4F8C82" opacity="1"/>
+  <circle cx="200" cy="128" r="7" fill="#4F8C82" opacity="1"/>
+  <path d="M205,190 L245,225" fill="none" stroke="currentColor" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M195,200 L215,180" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="tc-name">アーティスト</div><div class="tc-tag">自称</div><div class="tc-desc">感性で表現し、<br>美を生み出す人</div></div>
+        <div class="type-cell fixed-pattern"><span class="tc-num">08</span><div class="icon-badge fixed-pattern"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M80,220 L80,90" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80,220 L220,220" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95,190 L125,155 L155,175 L190,120" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="95" cy="190" r="4" fill="#4F8C82" opacity="1"/>
+  <circle cx="125" cy="155" r="4" fill="#4F8C82" opacity="1"/>
+  <circle cx="155" cy="175" r="4" fill="#4F8C82" opacity="1"/>
+  <circle cx="190" cy="120" r="4" fill="#4F8C82" opacity="1"/>
+  <circle cx="210" cy="150" r="26" fill="none" stroke="currentColor" stroke-width="18"/>
+  <path d="M228,168 L246,186" fill="none" stroke="currentColor" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="tc-name">アナライザー</div><div class="tc-tag">実測（投影）</div><div class="tc-desc">分析し、<br>正確さを追求する人</div></div>
 
-        <div class="type-cell"><span class="tc-num">09</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6 C15 6 12 9 11.5 13 C9.5 12 6.5 12.5 4.5 14.5 C7 14.5 8.5 15.5 9.5 17 C13 17.5 16 15 17 11 C18.3 10.5 19.5 8.5 20 6Z" stroke-linejoin="round"/><line x1="9.5" y1="17" x2="6" y2="20"/></svg></div><div class="tc-name">ピースメーカー</div><div class="tc-desc">調和をつくり、<br>平和を大切にする人</div></div>
-        <div class="type-cell"><span class="tc-num">10</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M3 18 L9 8 L12.5 13 L15 10 L21 18 Z"/><path d="M15 6.5 V11 M13.2 8.2 H16.8" stroke-width="1.3"/></svg></div><div class="tc-name">チャレンジャー</div><div class="tc-desc">挑戦を楽しみ、<br>限界を超えていく人</div></div>
-        <div class="type-cell fixed-pattern"><span class="tc-num">11</span><div class="icon-badge fixed-pattern"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M2.5 12 L6 9.5 L9.5 11.5 L11 10 L13 10 L14.5 11.5 L18 9.5 L21.5 12"/><path d="M9.5 11.5 L7.5 14 C7 14.7 7.3 15.6 8 16 C8.7 16.4 9.6 16.1 10 15.5 L11.5 13.3" /><path d="M14.5 11.5 L16.5 14 C17 14.7 16.7 15.6 16 16 C15.3 16.4 14.4 16.1 14 15.5 L12.5 13.3"/></svg></div><div class="tc-name">サポーター</div><div class="tc-tag">実測（繰込し）</div><div class="tc-desc">影の下で支え、<br>力を引き出す人</div></div>
-        <div class="type-cell"><span class="tc-num">12</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M12 3 L13.6 9.8 L20.5 11.4 L13.6 13 L12 19.8 L10.4 13 L3.5 11.4 L10.4 9.8 Z"/><circle cx="18" cy="5.5" r="0.9" fill="currentColor" stroke="none"/><circle cx="6" cy="17.5" r="0.9" fill="currentColor" stroke="none"/></svg></div><div class="tc-name">ビジョナリー</div><div class="tc-desc">長期的な視点で、<br>理想を描く人</div></div>
+        <div class="type-cell"><span class="tc-num">09</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M60,175 C95,150 120,158 135,172 C150,150 190,120 245,128 C215,138 195,152 188,164 C210,164 226,172 234,184 C205,180 186,186 176,196 C165,208 148,210 132,200" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="148" cy="178" r="5" fill="#4F8C82" opacity="1"/>
+  <circle cx="252" cy="116" r="3" fill="#4F8C82" opacity="0.7"/>
+  <circle cx="262" cy="106" r="2" fill="#4F8C82" opacity="0.4"/></svg></div><div class="tc-name">ピースメーカー</div><div class="tc-desc">調和をつくり、<br>平和を大切にする人</div></div>
+        <div class="type-cell"><span class="tc-num">10</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M60,215 L145,95 L185,150 L210,120 L245,215 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M145,95 L145,55" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M145,58 L182,72 L145,86 Z" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="145" cy="55" r="6" fill="#4F8C82" opacity="1"/>
+  <path d="M100,215 L100,175 L128,190 Z" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="tc-name">チャレンジャー</div><div class="tc-desc">挑戦を楽しみ、<br>限界を超えていく人</div></div>
+        <div class="type-cell fixed-pattern"><span class="tc-num">11</span><div class="icon-badge fixed-pattern"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M60,150 L100,150 L140,168 L150,158" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M240,150 L200,150 L160,168 L150,158" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M100,150 L100,120 L130,110" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M200,150 L200,120 L170,110" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M140,168 C146,176 154,176 160,168" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="159" r="7" fill="#4F8C82" opacity="1"/>
+  <circle cx="75" cy="132" r="3" fill="#4F8C82" opacity="0.7"/>
+  <circle cx="60" cy="118" r="2" fill="#4F8C82" opacity="0.4"/>
+  <circle cx="225" cy="132" r="3" fill="#4F8C82" opacity="0.7"/>
+  <circle cx="240" cy="118" r="2" fill="#4F8C82" opacity="0.4"/></svg></div><div class="tc-name">サポーター</div><div class="tc-tag">実測（繰込し）</div><div class="tc-desc">影の下で支え、<br>力を引き出す人</div></div>
+        <div class="type-cell"><span class="tc-num">12</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M150,60 C154,110 156,140 150,150 C144,140 146,110 150,60 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M150,240 C146,190 144,160 150,150 C156,160 154,190 150,240 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M60,150 C110,146 140,144 150,150 C140,156 110,154 60,150 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M240,150 C190,154 160,156 150,150 C160,144 190,146 240,150 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95,95 C120,112 138,128 150,150 C130,140 112,124 95,95 Z" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M205,95 C180,112 162,128 150,150 C170,140 188,124 205,95 Z" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95,205 C120,188 138,172 150,150 C130,160 112,176 95,205 Z" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M205,205 C180,188 162,172 150,150 C170,160 188,176 205,205 Z" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="150" r="8" fill="#4F8C82" opacity="1"/>
+  <circle cx="220" cy="80" r="3" fill="#4F8C82" opacity="0.7"/>
+  <circle cx="232" cy="68" r="2" fill="#4F8C82" opacity="0.4"/></svg></div><div class="tc-name">ビジョナリー</div><div class="tc-desc">長期的な視点で、<br>理想を描く人</div></div>
 
-        <div class="type-cell"><span class="tc-num">13</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 9 L7.5 11.5 L12 5 L16.5 11.5 L20 9 L18.3 17 H5.7 Z"/><line x1="5.7" y1="17" x2="18.3" y2="17"/></svg></div><div class="tc-name">リーダー</div><div class="tc-desc">決断し、<br>チームを導く人</div></div>
-        <div class="type-cell"><span class="tc-num">14</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><line x1="12" y1="4" x2="12" y2="19"/><path d="M3.5 8 L2 12.2 C2 13.6 3.3 14.5 4.7 14.5 C6.1 14.5 7.4 13.6 7.4 12.2 L5.9 8 Z"/><path d="M16.6 8 L15.1 12.2 C15.1 13.6 16.4 14.5 17.8 14.5 C19.2 14.5 20.5 13.6 20.5 12.2 L19 8 Z"/><line x1="3.5" y1="8" x2="20.5" y2="8"/><line x1="8.5" y1="19" x2="15.5" y2="19"/></svg></div><div class="tc-name">ディプロマット</div><div class="tc-desc">バランスをとり、<br>橋渡しをする人</div></div>
-        <div class="type-cell"><span class="tc-num">15</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4.5" y="5" width="15" height="15.5" rx="1.5"/><line x1="8" y1="3.2" x2="8" y2="6.8"/><line x1="16" y1="3.2" x2="16" y2="6.8"/><polyline points="7.5,11.5 9,13 11.5,10" stroke-linecap="round" stroke-linejoin="round"/><polyline points="7.5,16 9,17.5 11.5,14.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="tc-name">プランナー</div><div class="tc-desc">計画し、<br>着実に進める人</div></div>
-        <div class="type-cell"><span class="tc-num">16</span><div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M5 20 C5 10 12 4 20 4 C20 12 15 19 5 20Z"/><line x1="5" y1="20" x2="13" y2="12"/></svg></div><div class="tc-name">フリーランサー</div><div class="tc-desc">自由に動き、<br>自分の道をつくる人</div></div>
+        <div class="type-cell"><span class="tc-num">13</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M85,190 L85,150 L120,175 L150,120 L180,175 L215,150 L215,190 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M85,190 L215,190 L215,205 L85,205 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="85" cy="150" r="6" fill="#4F8C82" opacity="1"/>
+  <circle cx="150" cy="120" r="6" fill="#4F8C82" opacity="1"/>
+  <circle cx="215" cy="150" r="6" fill="#4F8C82" opacity="1"/>
+  <circle cx="150" cy="178" r="7" fill="#4F8C82" opacity="1"/></svg></div><div class="tc-name">リーダー</div><div class="tc-desc">決断し、<br>チームを導く人</div></div>
+        <div class="type-cell"><span class="tc-num">14</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M150,70 L150,220" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M115,220 L185,220" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80,110 L220,110" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="150" cy="90" r="6" fill="#4F8C82" opacity="1"/>
+  <path d="M80,110 L60,155 C60,168 100,168 100,155 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M220,110 L200,155 C200,168 240,168 240,155 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="60" cy="150" r="3" fill="#4F8C82" opacity="1"/>
+  <circle cx="240" cy="150" r="3" fill="#4F8C82" opacity="1"/></svg></div><div class="tc-name">ディプロマット</div><div class="tc-desc">バランスをとり、<br>橋渡しをする人</div></div>
+        <div class="type-cell"><span class="tc-num">15</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M75,95 L225,95 L225,220 L75,220 Z" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M75,120 L225,120" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M105,80 L105,105" fill="none" stroke="currentColor" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M195,80 L195,105" fill="none" stroke="currentColor" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95,145 L135,145" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95,170 L135,170" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M95,195 L125,195" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M170,145 L180,155 L200,133" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M170,170 L180,180 L200,158" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="200" cy="133" r="3" fill="#4F8C82" opacity="1"/>
+  <circle cx="200" cy="158" r="3" fill="#4F8C82" opacity="1"/></svg></div><div class="tc-name">プランナー</div><div class="tc-desc">計画し、<br>着実に進める人</div></div>
+        <div class="type-cell"><span class="tc-num">16</span><div class="icon-badge"><svg viewBox="0 0 300 300" fill="none" stroke="currentColor"><path d="M205,75 C160,90 110,130 92,190 C120,182 142,168 160,148" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M205,75 C190,120 165,155 130,178" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M150,110 L178,98" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M138,132 L168,120" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M126,154 L156,144" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M114,176 L140,168" fill="none" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="92" cy="192" r="7" fill="#4F8C82" opacity="1"/>
+  <circle cx="215" cy="62" r="3" fill="#4F8C82" opacity="0.7"/>
+  <circle cx="226" cy="50" r="2" fill="#4F8C82" opacity="0.4"/></svg></div><div class="tc-name">フリーランサー</div><div class="tc-desc">自由に動き、<br>自分の道をつくる人</div></div>
       </div>
 
       <div class="legend-row">
