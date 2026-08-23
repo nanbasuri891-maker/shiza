@@ -274,7 +274,7 @@
 
     <div class="score-intro">
       <span class="eyebrow-plain">score — ブランディングスコア</span>
-      <h1>あなたの脳のスイッチのオンオフを<br>時間軸の推移確率をスコア化</h1>
+      <h1>あなたのスイッチのオンオフ<br>時間軸の推移確率をスコア化</h1>
     </div>
 
     <div style="height:56px;"></div>
@@ -282,7 +282,7 @@
     <!-- ===== 調座・調息・調心と重心 ===== -->
     <div class="score-card">
       <div class="divider">framework</div>
-      <p class="section-sub">調座・調息・調心と重心</p>
+      <p class="section-sub">視座と重心</p>
 
       <div class="framework-row">
       <div class="triangle-diagram">
@@ -411,48 +411,42 @@
       <p class="card-note">黄＝自称（<strong>07 アーティスト・02 ケアテイカー</strong>）、赤＝実測の固着パターン（<strong>06 コミュニケーター・08 アナライザー・11 サポーター</strong>）です。自称と実測の間に3タイプ分の乖離があることが、視覚的に見えます。</p>
     </div>
 
-    <!-- ===== 自認と引き寄せのズレ ===== -->
-    <div class="score-card">
-      <div class="divider">self-image / landing</div>
-      <p class="section-sub">自認と引き寄せのズレ</p>
+   <!-- ===== 自認と引き寄せのズレ ===== -->
+<div class="score-card">
+  <div class="divider">self-image / landing</div>
+  <p class="section-sub">自認と引き寄せのズレ</p>
 
-      <div class="cross-diagram cross-diagram-bleed">
-        <svg viewBox="0 0 800 200" preserveAspectRatio="none">
-          <defs>
-            <linearGradient id="cxSelf" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="var(--teal)" stop-opacity="0.55"/>
-              <stop offset="100%" stop-color="var(--teal)" stop-opacity="0.85"/>
-            </linearGradient>
-            <linearGradient id="cxLanding" x1="1" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="var(--rose)" stop-opacity="0.55"/>
-              <stop offset="100%" stop-color="var(--rose)" stop-opacity="0.9"/>
-            </linearGradient>
-            <linearGradient id="cxNeutralTop" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="var(--ochre)" stop-opacity="0.5"/>
-              <stop offset="100%" stop-color="var(--ochre)" stop-opacity="0.22"/>
-            </linearGradient>
-            <linearGradient id="cxNeutralBottom" x1="0" y1="1" x2="0" y2="0">
-              <stop offset="0%" stop-color="var(--body)" stop-opacity="0.5"/>
-              <stop offset="100%" stop-color="var(--body)" stop-opacity="0.18"/>
-            </linearGradient>
-          </defs>
+  <div class="cross-diagram cross-diagram-bleed">
+    <svg viewBox="0 0 800 260" preserveAspectRatio="none">
 
-          <rect x="0" y="0" width="800" height="200" fill="var(--rose)" opacity="0.9"/>
-          <polygon points="0,0 620,0 260,120" fill="url(#cxNeutralTop)"/>
-          <polygon points="800,200 60,200 260,120" fill="url(#cxNeutralBottom)"/>
-          <polygon points="0,200 0,0 260,120" fill="url(#cxSelf)"/>
-          <polygon points="620,0 800,0 800,200 260,120" fill="url(#cxLanding)"/>
+      <polygon points="0,20 620,20 480,140" fill="var(--ochre)" opacity="0.14"/>
+      <polygon points="800,220 60,220 480,140" fill="var(--body)" opacity="0.10"/>
+      <polygon points="0,220 0,20 480,140" fill="var(--rose)" opacity="0.17"/>
+      <polygon points="620,20 800,20 800,220 480,140" fill="var(--teal)" opacity="0.14"/>
 
-          <line x1="0" y1="0" x2="800" y2="120" stroke="#fff" stroke-width="1" opacity="0.3"/>
-          <line x1="620" y1="0" x2="60" y2="200" stroke="#fff" stroke-width="1" opacity="0.3"/>
+      <line x1="0" y1="20" x2="800" y2="220" stroke="var(--ink)" stroke-width="0.6" opacity="0.12"/>
+      <line x1="620" y1="20" x2="0" y2="220" stroke="var(--ink)" stroke-width="0.6" opacity="0.12"/>
 
-          <text x="110" y="112" text-anchor="middle" class="cx-label">自認</text>
-          <text x="620" y="96" text-anchor="middle" class="cx-label cx-label-rose">人を引き寄せているのは<tspan x="620" dy="16">こっち</tspan></text>
-        </svg>
-      </div>
+      <text x="330" y="48" text-anchor="middle" class="td-label" fill="var(--ochre)">一致</text>
+      <text x="330" y="68" text-anchor="middle" class="td-label td-sub" fill="var(--ochre)">自認高・引き寄せ高</text>
 
-      <p class="card-note" style="text-align:center; margin-left:auto; margin-right:auto;">自分がそうだと思っている面（自認）と、実際に人を引き寄せている面は、同じ場所にあるとは限りません。</p>
-    </div>
+      <text x="710" y="70" text-anchor="middle" class="td-label" fill="var(--teal)">無意識の効果</text>
+      <text x="710" y="90" text-anchor="middle" class="td-label td-sub" fill="var(--teal)">自認低・引き寄せ高</text>
+
+      <text x="480" y="200" text-anchor="middle" class="td-label" fill="var(--body)">両方低い</text>
+      <text x="480" y="220" text-anchor="middle" class="td-label td-sub" fill="var(--body)">自認低・引き寄せ低</text>
+
+      <text x="150" y="90" text-anchor="middle" class="td-label td-rose">ズレ</text>
+      <text x="150" y="110" text-anchor="middle" class="td-label td-sub" fill="var(--rose)">自認高・引き寄せ低</text>
+
+      <circle cx="150" cy="140" r="8" fill="var(--rose)" opacity="0.85"/>
+      <text x="150" y="165" text-anchor="middle" class="td-label td-sub" fill="var(--rose)">現在地</text>
+
+    </svg>
+  </div>
+
+  <p class="card-note" style="text-align:center; margin-left:auto; margin-right:auto;">自分がそうだと思っている面（自認）と、実際に人を引き寄せている面（引き寄せ）は、同じ場所にあるとは限りません。ズレの面積の大きさが、そのまま乖離の度合いを表しています。</p>
+</div>
 
     <!-- ===== thinking layers ===== -->
     <div class="score-card">
